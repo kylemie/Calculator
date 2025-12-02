@@ -47,8 +47,8 @@ func AVG(slice []int) {
 	for _, v := range slice {
 		res += v
 	}
-	result := float64(res / len(slice))
-	fmt.Printf("AVG = %.1f", result)
+	result := float64(res) / float64(len(slice))
+	fmt.Printf("AVG = %.2f", result)
 }
 
 func SUM(slice []int) {
@@ -62,11 +62,11 @@ func SUM(slice []int) {
 func MED(slice []int) {
 	sort.Ints(slice)
 	if len(slice)%2 != 0 {
-		res := len(slice)/2 + 1
+		res := len(slice) / 2
 		fmt.Println(slice[res])
 	} else {
 		res := len(slice) / 2
-		result := float64((slice[res] + slice[res+1]) / 2)
-		fmt.Printf("MED = %.1f", result)
+		result := float64((slice[res] + slice[res-1])) / 2.0
+		fmt.Printf("MED = %.2f", result)
 	}
 }
