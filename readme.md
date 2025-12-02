@@ -1,1 +1,1 @@
-# first commit 
+# Calculator SUM/AMG/MED
