@@ -1,1 +1,1 @@
-# first commit 
+# Calculator AVG/SUM/MED
